@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+*{
+    font-family: Lato ;
+    line-height: 1.618rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#aboutMe{
+    margin-top: -4rem;
+}
+
+
+
+.container{
+    background-color: #fdfafa;
+    margin: 2rem auto;
+    max-width: 60rem;
+    width: 1000%;
+    -webkit-box-shadow: 10px 10px 63px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 10px 10px 63px 0px rgba(0,0,0,0.51);
+    box-shadow: 10px 10px 63px 0px rgba(0,0,0,0.51);
+}
+
+html{
+    font-size: 16px;
+    margin-top:2em
+}
+
+h1,h2,h3{
+    color: #c19dc7;
+}
+
+article > a{
+    color: #c19dc7;
+    text-decoration: none;
+}
+header,
+main,
+footer {
+    margin: 0 auto;
+    /* max-width: 800px */
+}
+
+header{
+    padding: 3em 0;
+}
+
+header h1{
+    font-size: 2em;
+    padding-left: .5em;
+    margin-top: -2.5rem;
+}
+
+header span{
+    font-size: 1.2em;
+    color: #999;
+
+    padding: 2em;
+}
+
+.profile1{
+    margin-top: -2rem;
+    max-width: 40%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding-bottom: -1em;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background-color: #777;
+    list-style-type: none;
+
+    
+}
+
+nav a{
+    padding: .5em 2em;
+    text-decoration: none;
+    color: #c19dc7;
+
+
+}
+
+nav a:hover{
+    background: #667;
+    border-radius: 1rem;
+    transition:.5s; 
+}
+
+section{
+    padding:2.7em;
+    min-height: .5em; 
+}
+
+section > p{
+    margin: 1em 0;
+}
+
+#socialMedia ul{
+    display: flex;
+    flex-flow: row;
+    gap: 10px;
+    /* justify-content: ; */
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+section ul {
+    padding-left: 1.5em
+}
+
+.project_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    grid-column-gap: 2em;
+}
+
+.project_grid article img {
+    text-align: center;
+    height: auto;
+    max-width: 100%;
+}
+
+footer{
+    margin-top:2em;
+    margin-bottom: 1em;
+    background: #666;
+    color:white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+
+
+
+#skills2 > ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
