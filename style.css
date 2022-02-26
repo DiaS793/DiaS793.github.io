@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato');
+@@import url('https://fonts.googleapis.com/css2?family=Lato');
 
 *{
     font-family: Lato ;
@@ -6,6 +6,33 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+}
+
+#portfolio_container{
+    background-color: red;
+    height: 200px;
+    /* background-image: linear-gradient(#f4ecf7,#e2ebf0 ); */
+    margin: 2rem auto;
+    max-width: 60rem;
+    padding-bottom: -20rem;
+    width: 1000%;
+}
+
+#project_gif {
+    /* height: auto; */
+    /* position: relative; */
+    bottom: 150px;
+}
+
+#banner {
+    max-width: 500px;
+    height: 200px;
+    margin-left: 3rem;
 }
 
 #aboutMe{
@@ -16,10 +43,9 @@
     background-color: #fdfafa;
     margin: 2rem auto;
     max-width: 60rem;
+    padding-bottom: -20rem;
     width: 1000%;
-    -webkit-box-shadow: 10px 10px 63px 0px rgba(0,0,0,0.51);
-    -moz-box-shadow: 10px 10px 63px 0px rgba(0,0,0,0.51);
-    box-shadow: 10px 10px 63px 0px rgba(0,0,0,0.51);
+    border-color: white;
 }
 
 html{
@@ -68,12 +94,12 @@ nav{
     top: 0;
     left:0;
     width: 100%;
-    padding-bottom: -1em;
+    padding: -30px;
 
     display: flex;
     flex-flow: row;
     justify-content: center;
-    background-color: #777;
+
     list-style-type: none;
     
 }
@@ -87,7 +113,7 @@ nav a{
 }
 
 nav a:hover{
-    background: #667;
+    background: #bfd0da;
     border-radius: 1rem;
     transition:.5s; 
 }
@@ -118,7 +144,102 @@ section ul {
     padding-left: 1.5em
 }
 
-.project_grid{
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* .project_grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -130,7 +251,9 @@ section ul {
     text-align: center;
     height: auto;
     max-width: 100%;
-}
+} */
+
+
 
 footer{
     margin-top:2em;
@@ -147,3 +270,8 @@ footer{
     grid-template-rows: auto;
 }
 
+/* Media Queries */
+
+@media screen and (max-width: 512px){
+    
+}
