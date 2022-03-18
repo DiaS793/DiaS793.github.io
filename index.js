@@ -33,16 +33,5 @@ span.onclick = function() {
 };
 
 
-// window.onclick = function (event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-// //   } else if (event.target == modal2) {
-// //     modal.style.display = "none";
-// //   } else if (event.target == modal3) {
-// //     modal.style.display = "none";
-// //   } else if (event.target == modal4) {
-// //     modal.style.display = "none";
-//   }
-// };
 
 
