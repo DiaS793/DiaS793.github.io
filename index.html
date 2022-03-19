@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,24 +21,20 @@
 
     <div class="portfolio_container">
       <div id="page">
-        <div class="header_Text">
-          
-        </div>
+        <div class="header_Text"></div>
         <section class="portfolio_BackgroundPic">
-          
+          <figure>
+            <header class="log">
+              <img src="images\DS.png" alt="" srcset="" />
+            </header>
+          </figure>
+          <section class="profile">
             <figure>
-                <header class="log">
-                    <img src="images\DS.png" alt="" srcset="">
-                </header>
+              <img src="images\20190731_143235 (2).jpg" class="profile1" />
             </figure>
-            <section class="profile">
-                <figure>
-                    <img src="images\20190731_143235 (2).jpg" class="profile1" />
-                </figure>
-            </section>
-            
+          </section>
         </section>
-       
+
         <main>
           <section id="aboutMe">
             <h2>About Me</h2>
@@ -131,27 +126,102 @@
               </div>
             </div>
           </section>
-         
+
           <section id="projects">
             <h1 class="projectHead">My Current Projects</h1>
-          
+
             <button id="mybtn" class="videoBtn">Mystery Educator</button>
-              <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close">X</span>
-                  <p>Description coming soon</p>
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">X</span>
+                <div style="height: 350px; overflow-y: scroll">
+                  <p>
+                    This project is called Mystery Educator. For this project,
+                    the ladies of my cohort were given the chance to be on the
+                    first women-only team. It was a lot of fun being able to
+                    have this opportunity to showcase what women can do when put
+                    in a team together.
+                    <br />
+                    The prompt of this project piggybacks off of a previous
+                    project the cohort did that was called JAC's Island Hopping
+                    website. For the project, we had to create a sing-page
+                    application (SPA) for kids that educated them on many
+                    different subjects, but with a twist, each time a child
+                    clicked on a subject they had to learn something different,
+                    hints the name Mystery Educator.
+                    <br />
+                    This project required that we rely heavily on 4 to 5 APIs
+                    picked by the instructors. We also had to create our own API
+                    to use along with them. We used Java and JavaScript to build
+                    the application as well as CSS and HTML. We also utilized
+                    JSON for data formating.
+                    <br />
+                    My role in this was to create the contact form and work on
+                    the art section. The contact page was made using a simple
+                    grid box design. It does not do anything or go anywhere else
+                    on the website, but I do plan on going back into work on
+                    making it post to the back end.
+                    <br />
+                    For the art section, I utilized The Metropolitan Art Museum
+                    in New York City to create the page. Within each mystery
+                    box, I discided to break each one down into a few art
+                    categories, masks, music, architecture, and statues. When a
+                    child clicks on one of the boxes, the page will randomly
+                    generate a different piece from that mystery box.
+                    <br />
+                    The Mystery part of this project hard concept to achieve and
+                    understand. The museum's API was made to give JSON data on
+                    each individual piece of art. They were not grouped in a
+                    collection as I had hoped. So I wasn't sure how to tackle
+                    the Mystery part of the project with this API. However,
+                    after talking and working with my group and the instructors
+                    I was able to achieve this part of the project concept by
+                    creating an array with 7 of the API IDs for each piece I
+                    wanted to use.
+                    <br />
+                    <br />
+                    <img
+                      id="ArtSectFun"
+                      src="images\ArtSectionFunction.png"
+                      alt=""
+                      srcset=""
+                    />
+                    <br /><br />
+                    There are 4 arrays broken into the names of the four
+                    pre-mentioned categories, Mask, Music, Architecture, and
+                    Statuses. Then I created an if statement with an
+                    event.target that called in an array, let's say artMask, and
+                    then set Math.floor and Math.random * the length of that
+                    array. Then set the value to artMask[artRand]. After this, I
+                    added the value to the API's URL in the
+                    apiHelpers.getRequest. I repeated this for each art ID. Then
+                    when a user clicks on a box, the IDs will randomly generate
+                    information from a different art ID each time.
+                    <br />
+                    I hope to go back to this project and add a bit more style
+                    to the pages to make them look my stylized.
+                  </p>
+                  <div id="meFooter">
+                    <a
+                      class="footer_github"
+                      href="https://github.com/DiaS793/team-1-spa"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github fa-lg"> Repository</i>
+                    </a>
+                  </div>
                 </div>
               </div>
+            </div>
 
             <div class="projectVideo">
               <figure>
-              <video controls="controls">
-                <source src="images\MysterEducator.mp4" />
-              </video>
+                <video controls="controls">
+                  <source src="images\MysterEducator.mp4" />
+                </video>
               </figure>
             </div>
             <div class="project-wrapper">
-
               <div class="project_box">
                 <button class="pbtn" id="mybtn2">Anime Review Site</button>
                 <h3 class="workingInProg">Work in progress...</h3>
@@ -161,39 +231,46 @@
                     <p>Description coming soon.</p>
                   </div>
                 </div>
-                  <a href="https://github.com/DiaS793/reviews-site-mvc-DiaS793" target="_blank">
-                    <img src="images\reviewHome.png" alt="" />
-                  </a>
+                <a
+                  href="https://github.com/DiaS793/reviews-site-mvc-DiaS793"
+                  target="_blank"
+                >
+                  <img src="images\reviewHome.png" alt="" />
+                </a>
               </div>
 
               <div class="project_box">
-                <button class="pbtn"  id="mybtn3">Donut Maker Site</button>
-                  <h3 class="workingInProg">Work in progress...</h3>
+                <button class="pbtn" id="mybtn3">Donut Maker Site</button>
+                <h3 class="workingInProg">Work in progress...</h3>
                 <div id="myModal3" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
                     <p>Description coming soon</p>
                   </div>
                 </div>
-                  <a href="https://github.com/DiaS793/donut-maker-DiaS793"  target="_blank">
-                    <img src="images\ProjectDonuts.png" alt="" />
-                  </a>
+                <a
+                  href="https://github.com/DiaS793/donut-maker-DiaS793"
+                  target="_blank"
+                >
+                  <img src="images\ProjectDonuts.png" alt="" />
+                </a>
               </div>
 
               <div class="project_box">
-                  
-                  <button class="pbtn" id="mybtn4">JAC Travel Site</button>
-                  <div id="myModal4" class="modal">
-                    <div class="modal-content">
-                      <span class="close">&times;</span>
-                      <p>Description coming soon</p>
-                    </div>
+                <button class="pbtn" id="mybtn4">JAC Travel Site</button>
+                <div id="myModal4" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Description coming soon</p>
                   </div>
-                  
-                  <a href="https://github.com/DiaS793/team-3-project" target="_blank">
-                    <img src="images\JAC-Enterprises-home1.png" alt="" />
-                   </a>
-                  
+                </div>
+
+                <a
+                  href="https://github.com/DiaS793/team-3-project"
+                  target="_blank"
+                >
+                  <img src="images\JAC-Enterprises-home1.png" alt="" />
+                </a>
               </div>
             </div>
           </section>

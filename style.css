@@ -163,6 +163,11 @@ section ul {
   padding-left: 1.5em;
 }
 
+#ArtSectFun{
+  width:50%;
+  margin-left: 13rem;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -182,6 +187,8 @@ section ul {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  height: 400px;
+  text-align: justify;
 }
 
 .close {
@@ -278,6 +285,8 @@ footer {
   color: #e63470;
 }
 
+
+
 /* Media Queries */
 
 @media only screen and (width: 948px) {
@@ -303,4 +312,29 @@ footer {
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     padding-top: 1rem;
   }
+}
+
+@media only screen and (max-width: 776px){
+  .skills_wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+   
+  }
+
+  .icon {
+    font-size: 15px;
+    color: #8d3c99;
+  }
+
+  .project_box button {
+    margin: 2rem;
+   
+  }
+
+  .videoBtn {
+   font-size: 50%;
+  }
+  
+  
 }
