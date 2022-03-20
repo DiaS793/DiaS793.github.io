@@ -15,22 +15,41 @@ btn.onclick = function () {
 
 btn2.onclick = function () {
    
-  modal.style.display = "block";
+  modal2.style.display = "block";
 };
 
 btn3.onclick = function () {
-  modal.style.display = "block";
+  modal3.style.display = "block";
 };
 
 
 btn4.onclick = function () {
-  modal.style.display = "block";
+  modal4.style.display = "block";
 };
 
 span.onclick = function() {
     console.log("hey,hey");
-  modal.style.display = "none";
+    if(event.target == modal){
+      modal.style.display = "none";
+    }
+ 
+  // modal2.style.display ="none";
 };
+
+// span.onclick = function() {
+//   console.log("hey,hey");
+// modal2.style.display = "none";
+// };
+
+// span.onclick = function() {
+//   console.log("hey,hey");
+// modal3.style.display = "none";
+// };
+
+// span.onclick = function() {
+//   console.log("hey,hey");
+// modal.style.display = "none";
+// };
 
 
 
