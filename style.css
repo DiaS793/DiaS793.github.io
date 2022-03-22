@@ -25,7 +25,7 @@ body {
 .portfolio_container {
   height: 2900px;
   margin: 2rem auto;
-  width: 80%;
+  max-width: 90%;
   background-image: linear-gradient(
     #f4f6f1,
     #f4f6f1,
@@ -171,6 +171,7 @@ section ul {
   width: 100%;
   background-repeat: no-repeat;
   padding-bottom: 2rem;
+  object-fit: cover;
 
 
 }
@@ -188,18 +189,21 @@ section ul {
   background-image: url('https://data.whicdn.com/images/235329233/original.gif');
   width: 100%;
   background-repeat: no-repeat;
+  object-fit: cover;
   
 }
 .modalHeaderJE_div {
   background-image: url('https://thumbs.gfycat.com/AlertRipeDevilfish-size_restricted.gif');
   width: 100%;
   background-repeat: no-repeat;
+  object-fit: cover;
  
 }
 .modalHeaderDM_div {
   background-image: url('https://media2.giphy.com/media/g0delle0tz7AH4nXex/giphy.gif');
   width: 100%;
   background-repeat: no-repeat;
+  object-fit: cover;
 }
 
 #ArtSectFun {
@@ -287,12 +291,12 @@ section ul {
 
 .project-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding-top: 1rem;
 }
 
 .projectVideo video {
-  width: 50%;
+  width: 70%;
   height: 5%;
 }
 .project_box img {
@@ -344,7 +348,7 @@ footer {
   font-size: 2rem;
   list-style: none;
   background-color: #8b3897;
-  max-width: 80%;
+  width: 90%;
 }
 
 #mail,
